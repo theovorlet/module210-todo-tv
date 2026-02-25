@@ -15,6 +15,20 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
+      # ce que je vais ajouter qui peut tous foutre en l'air
+      # name c'est le nom, run les actions a réaliser
+      # if condition, on utilise -f pour vérifier que le fichier existe
+      # on peut utiliser -d pour les dossiers et -e pour dossier et/ou fichier
+      - name: Vérifier la présence de index.html
+        run: |
+          if [ -f src\frontend\index.html ]; then 
+            echo "Le fichier index.html existe."
+          else 
+            echo "Erreur : index.html n'existe pas !"
+            exit 1
+          fi
+
+      #le code de base qui fonctionne depuis là
       - uses: actions/checkout@v3
         with:
           submodules: true
