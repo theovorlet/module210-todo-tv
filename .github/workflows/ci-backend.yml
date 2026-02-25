@@ -7,7 +7,7 @@ on:
 
 env:
   REG_NAME: "acrinfofd22210.azurecr.io" # Nom du registy
-  IMAGE_NAME: "backend-app-vorlet" # Nom de votre image
+  IMAGE_NAME: "Todo-backend-vorlet-1.0" # Nom de votre image
 
 jobs:
   build-and-deploy:
@@ -20,7 +20,7 @@ jobs:
       - name: login registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ env.REG_NAME }}
+          registry: ${{env.REG_NAME }}
           username: ${{secrets.REGISTRY_USERNAME}}
           password: ${{secrets.REGISTRY_PASSWORD}}
 
