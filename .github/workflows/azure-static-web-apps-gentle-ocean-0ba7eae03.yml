@@ -58,6 +58,14 @@ jobs:
           budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+          assert:
+            assertions:
+              performance:
+                - error
+                - minScore: 0.80
+              accessibility:
+                - error
+                - minScore: 0.80
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
