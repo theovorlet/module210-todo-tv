@@ -3,7 +3,13 @@
     "path": "/*",
     "resourceSizes": [
       { "resourceType": "document", "budget": 18 },
-      { "resourceType": "total", "budget": 2000 }
+      { "resourceType": "total", "budget": 200 }
     ]
+  },
+  {
+    "performance": 80,
+    "accessibility": 80,
+    "best-practices": 90,
+    "seo": 90
   }
 ]
