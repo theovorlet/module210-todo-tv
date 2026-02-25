@@ -7,7 +7,7 @@ on:
 
 env:
   REG_NAME: "acrinfofd22210.azurecr.io" # Nom du registy
-  IMAGE_NAME: "Todo-backend-vorlet-1.0" # Nom de votre image
+  IMAGE_NAME: "todo-backend-vorlet-1.0" # Nom de votre image
 
 jobs:
   build-and-deploy:
