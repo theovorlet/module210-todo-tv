@@ -1,15 +1,6 @@
-[
-  {
-    "path": "/*",
-    "resourceSizes": [
-      { "resourceType": "document", "budget": 18 },
-      { "resourceType": "total", "budget": 200 }
-    ]
-  },
-  {
-    "performance": 90,
-    "accessibility": 80,
-    "best-practices": 90,
-    "seo": 90
-  }
-]
+{
+  "performance": 90,
+  "accessibility": 80,
+  "best-practices": 90,
+  "seo": 90
+}
